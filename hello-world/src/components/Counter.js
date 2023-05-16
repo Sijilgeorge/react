@@ -9,13 +9,27 @@ import React, { Component } from 'react'
                 count:0
             }
         }
-    }
+      }
+      increment(){
+        this.setState(
+        {
+          count:this.state.count + 1
+
+        },()=>{
+          console.log('set',this.state.Count)
+        })
+        console.log(this.state.Count)
+      }
+    
+
+      
+    
   render() {
     return (
       <div>
         count-{this.state.count}
         <br></br>
-        <button>increment</button>
+        <button onClick={()=>this.increment()}>increment</button>
 
       </div>
     )

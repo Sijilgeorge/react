@@ -1,12 +1,12 @@
 import React from 'react'
 
 
-let Greet=(props)=>{
-    console.log(props)
+let Greet=({name})=>{
+   
     return (
     <div>
-    <h1>hello {props.name}</h1>
-    {props.children}
+    <h1>hello {name}</h1>
+    
     </div>
     
     )
